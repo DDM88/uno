@@ -211,7 +211,7 @@ namespace Uno.UI.RemoteControl.HotReload
 				foreach (
 					var (element, elementHandler, elementMappedType) in
 					EnumerateHotReloadInstances(
-						Window.Current.Content,
+						Window.Current!.Content!,
 						fe =>
 							{
 								// Get the original type of the element, in case it's been replaced
