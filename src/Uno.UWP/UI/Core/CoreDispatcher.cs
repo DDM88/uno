@@ -32,7 +32,7 @@ namespace Windows.UI.Core
 		/// </summary>
 		internal static CoreDispatcher Main { get; } = new CoreDispatcher();
 
-		public CoreDispatcher()
+		private CoreDispatcher()
 		{
 			Debug.Assert(
 				(int)CoreDispatcherPriority.High == 1 &&
