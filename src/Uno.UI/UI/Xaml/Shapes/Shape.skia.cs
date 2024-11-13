@@ -1,10 +1,10 @@
 ﻿#nullable enable
 
 using Windows.Foundation;
-using Microsoft.UI.Composition;
+using Windows.UI.Composition;
 using System.Numerics;
 
-namespace Microsoft.UI.Xaml.Shapes
+namespace Windows.UI.Xaml.Shapes
 {
 	partial class Shape
 	{
@@ -30,7 +30,7 @@ namespace Microsoft.UI.Xaml.Shapes
 
 		private protected override ContainerVisual CreateElementVisual() => Compositor.GetSharedCompositor().CreateShapeVisual();
 
-		private protected void Render(Microsoft.UI.Composition.SkiaGeometrySource2D? path, double? scaleX = null, double? scaleY = null, double? renderOriginX = null, double? renderOriginY = null)
+		private protected void Render(Windows.UI.Composition.SkiaGeometrySource2D? path, double? scaleX = null, double? scaleY = null, double? renderOriginX = null, double? renderOriginY = null)
 		{
 			if (path is null)
 			{
